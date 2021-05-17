@@ -11,3 +11,6 @@ debug print line command d(tag: "", message: "messsage $savedName")
   -  // val(?) preferences = getSharedPreferences(key, Context.MODE_PRIVATE)
   -  // String savedName = preferences.getString("savedProductName", "Not exist")
   -  // d(tag: "hello", msg: "saved message is $savedName")
+
+running on backgraound (co-routine) XX
+
