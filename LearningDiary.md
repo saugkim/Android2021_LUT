@@ -6,7 +6,7 @@ how to use ImageButton, there are some images(like icons) available
   
 17 May (MA)  
 debug print line command d(tag: "", message: "messsage $savedName")  
-  - start with d (android.log.  
+  - start with d (import android.util.log.d)  
   - see logcat search with tag
   -  // val(?) preferences = getSharedPreferences(key, Context.MODE_PRIVATE)
   -  // String savedName = preferences.getString("savedProductName", "Not exist")
