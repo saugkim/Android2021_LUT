@@ -15,14 +15,14 @@ debuggin tip: print something in event log window
 
 
 18 May (TI) -QuickNote app-  
-learning AlertDialog inside on button click event listener
+learning AlertDialog inside on button click event listener  
+
 ``
 saveIButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog ad = new Builder(MainActivity.this).create();
                 final EditText saveFileName = new EditText(MainActivity.this);
-
                 ad.setView(saveFileName);
                 ad.setMessage("Save File");
 
