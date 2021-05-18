@@ -15,8 +15,9 @@ debuggin tip: print something in event log window
    String savedName = preferences.getString("savedProductName", "Not exist")
    d(tag: "hello", msg: "saved message is: " + savedName)
 ```
-<br />  
-<br />
+<br>  
+<br>
+
 18 May (TI)  
 -QuickNote app-   
 using AlertDialog inside on button click event listener  
