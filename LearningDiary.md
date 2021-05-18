@@ -4,14 +4,17 @@ how to use ImageButton, there are some images(like icons) available
   - ic_menu_save for file saving button icon..
 <br />  
 <br />  
+
 17 May (MA)  
 debuggin tip: print something in event log window  
   using d(tag: "TAG", msg: "messsage: " + variableName)    
-  - start with d (import android.util.Log.d)  
-  - see logcat search with tag
-  -  // SharedPreferences preferences = getSharedPreferences(key, Context.MODE_PRIVATE)
-  -  // String savedName = preferences.getString("savedProductName", "Not exist")
-  -  // d(tag: "hello", msg: "saved message is: " + savedName)
+   - start with d (import android.util.Log.d)  
+   - see logcat search with tag
+```
+   SharedPreferences preferences = getSharedPreferences(key, Context.MODE_PRIVATE)
+   String savedName = preferences.getString("savedProductName", "Not exist")
+   d(tag: "hello", msg: "saved message is: " + savedName)
+```
 <br />  
 <br />
 18 May (TI) -QuickNote app-  
