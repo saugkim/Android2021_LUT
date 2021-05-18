@@ -6,7 +6,7 @@ how to use ImageButton, there are some images(like icons) available
   
 17 May (MA)  
 debuggin tip: print something in event log window  
-  using d(tag: "TAG", msg: "messsage " + savedName)    
+  using d(tag: "TAG", msg: "messsage: " + variableName)    
   - start with d (import android.util.Log.d)  
   - see logcat search with tag
   -  // SharedPreferences preferences = getSharedPreferences(key, Context.MODE_PRIVATE)
