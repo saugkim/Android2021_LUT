@@ -13,7 +13,7 @@ debuggin tip: print something in event log window
 ```
    SharedPreferences preferences = getSharedPreferences(key, Context.MODE_PRIVATE)
    String savedName = preferences.getString("savedProductName", "Not exist")
-   d(tag: "hello", msg: "saved message is: " + savedName)
+   d(tag: "kim", msg: "saved message is: " + savedName)
 ```
 <br>  
 <br>
