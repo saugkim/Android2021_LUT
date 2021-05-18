@@ -2,8 +2,8 @@
 13 MAY 2021 (TO)  
 how to use ImageButton, there are some images(like icons) available from Android Studio 
   - ic_menu_save for file saving button icon...
-<br />  
-<br />  
+<br>  
+<br>  
 
 17 May (MA)  
 debuggin tip: print something in event log window  
