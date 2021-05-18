@@ -15,9 +15,10 @@ debuggin tip: print something in event log window
 
 
 18 May (TI) -QuickNote app-  
-learning AlertDialog inside on button click event listener  
+using AlertDialog inside on button click event listener  
 
-``
+
+```  
 saveIButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,7 +26,6 @@ saveIButton.setOnClickListener(new View.OnClickListener() {
                 final EditText saveFileName = new EditText(MainActivity.this);
                 ad.setView(saveFileName);
                 ad.setMessage("Save File");
-
                 ad.setButton(AlertDialog.BUTTON_POSITIVE, "Save", 
                   new DialogInterface.OnClickListener() {
                     @Override
@@ -49,6 +49,6 @@ saveIButton.setOnClickListener(new View.OnClickListener() {
 
                 ad.show();
        });
-``
+```
        
      
