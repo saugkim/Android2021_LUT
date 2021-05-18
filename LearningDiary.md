@@ -2,8 +2,8 @@
 13.5.2021 (TO)  
 how to use ImageButton, there are some images(like icons) available  
   - ic_menu_save for file saving button icon..
-  
-||  
+\ 
+\
 17 May (MA)  
 debuggin tip: print something in event log window  
   using d(tag: "TAG", msg: "messsage: " + variableName)    
@@ -12,8 +12,8 @@ debuggin tip: print something in event log window
   -  // SharedPreferences preferences = getSharedPreferences(key, Context.MODE_PRIVATE)
   -  // String savedName = preferences.getString("savedProductName", "Not exist")
   -  // d(tag: "hello", msg: "saved message is: " + savedName)
-
-||  
+\
+\  
 18 May (TI) -QuickNote app-  
 using AlertDialog inside on button click event listener  
 
@@ -48,7 +48,7 @@ saveIButton.setOnClickListener(new View.OnClickListener() {
                 });
 
                 ad.show();
-       });
+});
 ```
        
      
