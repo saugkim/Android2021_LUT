@@ -1,7 +1,7 @@
 
-13.5.2021 (TO)  
-how to use ImageButton, there are some images(like icons) available  
-  - ic_menu_save for file saving button icon..
+13 MAY 2021 (TO)  
+how to use ImageButton, there are some images(like icons) available from Android Studio 
+  - ic_menu_save for file saving button icon...
 <br />  
 <br />  
 
@@ -23,34 +23,36 @@ using AlertDialog inside on button click event listener
 
 ```  
 saveIButton.setOnClickListener(new View.OnClickListener() {
+    
+    @Override
+    public void onClick(View v) {
+        AlertDialog ad = new Builder(MainActivity.this).create();
+        final EditText saveFileName = new EditText(MainActivity.this);
+        
+        ad.setView(saveFileName);
+        ad.setMessage("Save File");
+        ad.setButton(AlertDialog.BUTTON_POSITIVE, "Save", 
+                             new DialogInterface.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                AlertDialog ad = new Builder(MainActivity.this).create();
-                final EditText saveFileName = new EditText(MainActivity.this);
-                ad.setView(saveFileName);
-                ad.setMessage("Save File");
-                ad.setButton(AlertDialog.BUTTON_POSITIVE, "Save", 
-                  new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        try {
-                            FileOutputStream fout = openFileOutput(saveFileName.getText().toString() + ".txt", MODE_APPEND);
-                            fout.write(text.getText().toString().getBytes());
-                        } catch (Exception e) {
-                            Toast.makeText(getApplicationContext(), "Error occurred: " + e, Toast.LENGTH_LONG).show();
-                        }
-                    }
-                });
+            public void onClick(DialogInterface dialog, int which) {
+                try {
+                    FileOutputStream fout = openFileOutput(saveFileName.getText().toString() + ".txt", MODE_APPEND);
+                    fout.write(text.getText().toString().getBytes());
+                } catch (Exception e) {
+                    Toast.makeText(getApplicationContext(), "Error occurred: " + e, Toast.LENGTH_LONG).show();
+                }
+            }
+        });
 
-                ad.setButton(AlertDialog.BUTTON_NEGATIVE, "Cancel", 
-                  new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                });
+        ad.setButton(AlertDialog.BUTTON_NEGATIVE, "Cancel", 
+                             new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
 
-                ad.show();
+        ad.show();
 });
 ```
        
