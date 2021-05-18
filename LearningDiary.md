@@ -17,9 +17,9 @@ debuggin tip: print something in event log window
 ```
 <br />  
 <br />
-18 May (TI) -QuickNote app-  
+18 May (TI)  
+-QuickNote app-   
 using AlertDialog inside on button click event listener  
-
 
 ```  
 saveIButton.setOnClickListener(new View.OnClickListener() {
