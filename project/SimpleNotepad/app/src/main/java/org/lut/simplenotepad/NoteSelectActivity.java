@@ -6,14 +6,12 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
 
@@ -25,7 +23,7 @@ import java.util.ArrayList;
 
 import static android.util.Log.d;
 
-public class NoteSelect extends AppCompatActivity {
+public class NoteSelectActivity extends AppCompatActivity {
 
     public ArrayList<Note> notes;
     private NoteAdapter nAdapter;
@@ -67,7 +65,7 @@ public class NoteSelect extends AppCompatActivity {
         editor.putInt("org.lut.simplenotepad.NOTE_INDEX", 0);
         editor.apply();
 
-        Intent intentToMain = new Intent(NoteSelect.this, MainActivity.class);
+        Intent intentToMain = new Intent(NoteSelectActivity.this, MainActivity.class);
         startActivity(intentToMain);
     }
 

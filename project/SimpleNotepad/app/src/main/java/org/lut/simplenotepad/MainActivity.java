@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -200,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent myIntent = new Intent(MainActivity.this, NoteSelect.class);
+            Intent myIntent = new Intent(MainActivity.this, NoteSelectActivity.class);
             MainActivity.this.startActivity(myIntent);
         }
 
