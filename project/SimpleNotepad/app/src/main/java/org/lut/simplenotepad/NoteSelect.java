@@ -42,7 +42,7 @@ public class NoteSelect extends AppCompatActivity {
         rvNotes = (RecyclerView) findViewById(R.id.rvNotes);
 
         notes = getNotes();
-        d("kim", "number of notes: "+ notes.size());
+        d("kim", "NoteSelect, number of notes: "+ notes.size());
 
         nAdapter = new NoteAdapter(notes);
         RecyclerView.LayoutManager mLayoutManager =
@@ -55,16 +55,16 @@ public class NoteSelect extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                goToMain(0);
+                goToMain();
             }
         });
     }
 
-    private void goToMain(int file_index) {
+    private void goToMain() {
 
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("org.lut.simplenotepad.PREFS", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("org.lut.simplenotepad.NOTE_INDEX", file_index);
+        editor.putInt("org.lut.simplenotepad.NOTE_INDEX", 0);
         editor.apply();
 
         Intent intentToMain = new Intent(NoteSelect.this, MainActivity.class);
@@ -77,22 +77,25 @@ public class NoteSelect extends AppCompatActivity {
         File directory;
         directory = getFilesDir();
         File[] files = directory.listFiles();
-        String theFile;
 
         if (files == null) {
             return notes_;
         }
 
-        for (int f = 1; f <= files.length; f++) {
-            //d("kim", "inside for loop " + f);
-            theFile = "Note" + f + ".txt";
-            d("kim", "inside for loop filename: " + theFile);
-            String contents = Open(theFile);
-            //d("kim", "inside for loop file content: " + contents);
-            Note note = new Note(theFile, Open(theFile));
-            //d("kim", "after new note");
+        for (int i = 0; i < files.length; i++) {
+            String filename = files[i].getName();
+            String contents = Open(filename);
+            d("kim", "NoteSelect, inside loop filename: " + filename + ", file content: " + contents);
+            Note note = new Note(filename, contents);
             notes_.add(note);
-            //d("kim", "after adding to list");
+            /*
+            d("kim", "inside for loop " + f);
+            theFile = "Note" + f + ".txt";
+            String contents = Open(theFile);
+            d("kim", "inside for loop file content: " + contents);
+            Note note = new Note(theFile, Open(theFile));
+            notes_.add(note);
+            */
         }
         return notes_;
     }
@@ -118,5 +121,4 @@ public class NoteSelect extends AppCompatActivity {
 
         return content;
     }
-
 }
