@@ -1,12 +1,11 @@
 ## Mobile application
 
-**About project app**     
+### About project app     
 
-<br>
 App name:  
 SimpleNotepad: about create note and save it internally.
 
-<br>  
+
 Tools used:  
 Android Studio IDE version 3.6.1, Git,    
 <br>
@@ -42,6 +41,6 @@ RecyclerView to show list of notes
 File writing and saving internally  
 
 
-**How To RUN**  
+### How To RUN  
 
 
