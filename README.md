@@ -1,20 +1,26 @@
-# Android2021_LUT KIM
+# Mobile Application 
 
-** About project app **  
-<Br>
+**About project app**  
+<br>
 App name: 
 SimpleNotepad  
-this app is about create note and save it internally.
-<Br>
-Tools:
-Android Studio IDE version 3.6.1  
-using Basic Activity when start  
-
+about create note and save it internally.
+<br>
+Tools used:
+Android Studio IDE version 3.6.1, Git,    
+  
 default configuration gradule
 {
 
 }
 
+Two basic activities (Views)      
+  1. MainActivity  
+  2. NoteSelectActivity  
+RecyclerView to show list of notes  
+File writing and saving internally    
 
+<br>
+**How To RUN**  
 
 
