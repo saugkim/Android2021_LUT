@@ -1,4 +1,4 @@
-## Mobile Application 
+## Mobile application
 
 **About project app**     
 
@@ -42,6 +42,6 @@ RecyclerView to show list of notes
 File writing and saving internally  
 
 
-### How To RUN  
+**How To RUN**  
 
 
