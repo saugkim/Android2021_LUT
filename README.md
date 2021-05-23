@@ -4,7 +4,6 @@
 <br>
 App name:  
 SimpleNotepad: about create note and save it internally.
-
 <br>
 Tools used:  
 Android Studio IDE version 3.6.1, Git,    
