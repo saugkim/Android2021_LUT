@@ -1,8 +1,8 @@
 ## Mobile Application 
 
-### About project app ###  
+**About project app**     
 
-<br>  
+<br>
 App name:  
 SimpleNotepad: about create note and save it internally.
 <br>  
