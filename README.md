@@ -1,6 +1,6 @@
 ## Mobile Application 
 
-### About project app  
+### About project app ###  
 
 <br>  
 App name:  
