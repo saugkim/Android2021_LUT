@@ -4,11 +4,10 @@
 <br>
 App name:  
 SimpleNotepad: about create note and save it internally.
-<br>
+<br>  
 Tools used:  
 Android Studio IDE version 3.6.1, Git,    
-  
-  
+<br>  
 build.gradle(app)  
 ```
 android {
@@ -22,7 +21,6 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             minifyEnabled false
