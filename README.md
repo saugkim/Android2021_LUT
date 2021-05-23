@@ -34,8 +34,10 @@ android {
 ```
 
 Two basic activities (Views)      
-  1. MainActivity  
-  2. NoteSelectActivity  
+  1. MainActivity      
+      - can write save note, create new note, go to List by menu
+  2. NoteSelectActivity    
+      - can edit modify remove a selected note, create new note
 
 RecyclerView to show list of notes  
 File writing and saving internally    
