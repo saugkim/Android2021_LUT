@@ -1,6 +1,6 @@
 ## Mobile Application 
 
-**About project app**  
+### About project app  
 <br>
 App name:  
 SimpleNotepad: about create note and save it internally.
@@ -37,10 +37,9 @@ Two basic activities (Views)
       - can edit modify remove a selected note, create new note
 
 RecyclerView to show list of notes  
-File writing and saving internally    
+File writing and saving internally  
 
-<br>
 
-**How To RUN**  
+### How To RUN  
 
 
