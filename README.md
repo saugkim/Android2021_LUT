@@ -73,5 +73,6 @@ you can download apk from below link
 <br>
 
 ### Demo video Youtube  
-link1: https://youtu.be/TBwV-C7bRuc  
-link2: https://youtu.be/RQopmmbZXLY  
+[SimpleNotepad demo1](https://youtu.be/RQopmmbZXLY)   
+[SimpleNotepad demo2](https://youtu.be/TBwV-C7bRuc)  
+
