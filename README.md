@@ -1,4 +1,5 @@
-## Software Development Skills: Mobile 2020-21
+## Software Development Skills: Mobile 2020-21  
+by Yukyeong Kim  
 
 ### About project app     
 
