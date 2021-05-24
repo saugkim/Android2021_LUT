@@ -27,6 +27,14 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        applicationVariants.all{
+            variant ->
+                variant.outputs.each{
+                    output->
+                        def name = "Note_R${variant.versionName}.apk"
+                        output.outputFileName = name
+                }
+        }
     }
 }
 ```
