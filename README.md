@@ -68,7 +68,7 @@ File writing and saving internally
 
 ### Download apk
 you can download apk from below link  
-[app-release.apk](https://drive.google.com/file/d/1gDkyhOO0ezmU08OeC18uJFCkkxcB1zcw/view?usp=sharing)  
+[Note_R1.0.apk](https://drive.google.com/file/d/1Y1l_bqSE4Jz-TjE1M8bhRQdgjhDFJnhI/view?usp=sharing)  
   
 <br>
 
